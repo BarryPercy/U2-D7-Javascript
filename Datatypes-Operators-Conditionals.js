@@ -59,7 +59,7 @@ console.log('6.',y);
 let name1 = "john"
 let name2 = "John"
 console.log('7. Are name1 and name2 equal?',name1===name2);
-console.log('7. If name2 was "john" then the result of the above would be',name1==="john")
+console.log('7. If name2 was "john" then the result of the above would be',name1===name2.toLowerCase())
 /* EXERCISE 8
  Create a variable named x, and assign to it a numeric value less than 10.
  Write the code to print the literal value of x (ex.: if x is 1, it should print "one", if x is 5 it should print "five" etc.).
@@ -90,5 +90,5 @@ if(x===1){
  [Extra] Assign a value to a variable using a ternary operator (this topic has not been covered during lesson yet,
  try to search it by yourself, tomorrow morning we'll discuss it together!)
 */
-
+let b = false;
 let a = b ? 12:13;
