@@ -31,22 +31,43 @@ console.log(stringThree);
  Display the result in the console.
 */
 
-let num1 = 4;
-let num2 = 5;
-let num3 = 7;
+let num1 = 5;
+let num2 = 2;
+let num3 = 6;
 let greatestnumber;
+let secondnumber;
+let lowestnumber;
 if(num2>num1) {
     if (num3>num2){
         greatestnumber = num3;
+        secondnumber = num2;
+        lowestnumber = num1;
     } else{
         greatestnumber = num2;
+        if (num3>num1){
+            secondnumber = num3;
+            lowestnumber = num1;
+        }
+        else{
+            secondnumber = num1;
+            lowestnumber = num3;
+        }
     }
 } else if (num3>num1){
     greatestnumber = num3;
+    secondnumber = num1;
+    lowestnumber = num2;
+} else if (num3>num2){
+    greatestnumber = num1;
+    secondnumber = num3;
+    lowestnumber = num2;
 } else{
     greatestnumber = num1;
+    secondnumber = num2;
+    lowestnumber = num3;
 }
-console.log('Greatest number is',greatestnumber);
+console.log("num1 =",num1,"num2 =",num2,"num3 =",num3)
+console.log('Greatest number is',greatestnumber,', Second is ',secondnumber,'and the lowest is', lowestnumber);
 /*EX 5
  Write a piece of code for finding the average of two given integers.
 */
