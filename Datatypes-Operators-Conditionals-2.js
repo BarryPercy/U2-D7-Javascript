@@ -4,7 +4,7 @@
  Use a ternary operator to assign to a variable called gender the string values "male" or "female".
  The choice should be made based on the value of another variable called isMale.
 */
-let isMale = true;
+let isMale = false;
 let myGender = isMale ? "male":"female";
 console.log(myGender);
 /*EX 2
@@ -15,7 +15,11 @@ let numberTwo;
 let addition = numberOne + numberTwo;
 let subtraction = numberOne-numberTwo;
 let subtractionOtherWay= numberTwo-numberOne;
-if (numberOne===8||numberTwo===8||addition||subtraction||subtractionOtherWay);
+if (numberOne===8||numberTwo===8||addition===8||subtraction===8||subtractionOtherWay===8){
+    console.log("8!");
+}else{
+    console.log("not 8!");
+}
 
 /*EX 3
  Create a variable and assign to it the concatenation of two strings.
